@@ -1,0 +1,25 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Electrolize', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media and, (max-width: 320px){
+  .container{
+    width: 100%;
+  }
+}

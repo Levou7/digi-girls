@@ -1,0 +1,66 @@
+@import '../../../assets/sass/variables.scss';
+
+.bgW{
+    background-color: #E5E5E5;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.regist{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    h2{
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 47px;
+        color: black;
+    }
+    &-inp{
+        display: flex;
+        input{
+            width: 360px;
+            padding: 5px 0;
+            border: none;
+            border-bottom: 1px solid $pink;
+            background-color: transparent;
+            outline: none;
+            color: #858585;
+        }
+        p{
+            text-align: left !important;
+            margin-top: 50px;
+            color: #858585;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &-left{
+            display: flex;
+            align-items: flex-start;
+            justify-content: left;
+            flex-direction: column;
+        }
+        &-right{
+            display: flex;
+            align-items: flex-start;
+            justify-content: left;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+    }
+    &-btn{
+        a{
+            background-color: $pink;
+            color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 9px 17px;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+    }
+}

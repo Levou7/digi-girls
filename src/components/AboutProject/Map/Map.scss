@@ -1,0 +1,53 @@
+@import url('../../../assets/sass/variables.scss');
+
+.map{
+    padding: 50px 0;
+    &-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-left{
+            background-image: url('../../../assets/img/mapL.png');
+            background-size: cover;
+            background-position: center;
+            width: 660px;
+            height: 530px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            flex-direction: column;
+            .right{
+                margin-left: 20px;
+                b{
+                font-weight: 500;
+                font-size: 26.272px;
+                line-height: 29px;
+                color: white;
+            }
+            .w270{
+                width: 270px;
+            }
+            p{
+                font-weight: 200;
+                font-size: 22.5188px;
+                line-height: 25px;
+                color: white;
+                margin-top: 10px;
+            }
+            }
+            .div-map{
+                display: flex;
+                margin-left: 50px;
+                margin-top: 35px;
+            }
+        }
+        &-right{
+            width: 660px;
+            height: 530px;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

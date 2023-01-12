@@ -1,0 +1,78 @@
+@import '../../../assets/sass/variables.scss';
+
+.bgD{
+    background-image: url('../../../assets/img/direct.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: 50px 0px;
+    overflow-y: scroll;
+}
+
+.direction{
+    padding: 30px;
+    &-txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        b{
+            color: white;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 129.5%;
+        }
+        p{
+            color: white;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 129.5%;
+            margin-top: 10px;
+        }
+    }
+    &-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+        div{
+            width: 200px;
+            height: 240px;
+            background-color: $darkPink;
+            border-radius: 5px;
+            background: rgba(189, 0, 255, 0.3);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 129.5%;
+                color: white;
+                text-align: center;
+            }
+            .br{
+                margin-bottom: 65px;
+            }
+        }
+    }
+    &-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        button{
+            background-color: $pink;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            padding: 8px 14px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}

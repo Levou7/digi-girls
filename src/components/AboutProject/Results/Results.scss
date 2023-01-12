@@ -1,0 +1,54 @@
+@import url('../../../assets/sass/variables.scss');
+
+.bgR{
+    background-image: url('../../../assets/img/result.png');
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+}
+
+.result{
+    &-txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            color: white;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 47px;
+            margin-top: 80px;
+        }
+        p{
+            color: white;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 31px;
+            text-align: center;
+            width: 900px;
+            margin-top: 20px;
+        }
+    }
+    &-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        p{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            width: 250px;
+            color: white;
+            margin-top: 10px;
+        }
+    }
+}

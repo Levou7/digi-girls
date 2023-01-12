@@ -1,0 +1,224 @@
+@import '../../../assets/sass/variables.scss';
+
+.bgT{
+    background-image: url('../../../assets/img/task.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    margin: 30px 0;
+    overflow-y: scroll;
+}
+
+.tasks{
+    &-txt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: white;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 129.5%;
+            margin-top: 30px;
+        }
+    }
+    &-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        div{
+            width: 382px;
+            height: 105px;
+            background-color: $darkPink;
+            background: rgba(189, 0, 255, 0.2);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            margin: 25px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                text-align: center;
+                color: white;
+                width: 342px;
+                font-weight: 300;
+                font-size: 21.8647px;
+                line-height: 129.5%;
+            }
+        }
+        .ten{
+            width: 540px;
+            overflow: hidden;
+            position: relative;
+            p{
+                width: 520px;
+                &::before{
+                    content: '10';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .one{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '1';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .two{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '2';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .three{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '3';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .four{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '4';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .five{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '5';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .six{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '6';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .seven{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '7';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .eight{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '8';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+        .nine{
+            overflow: hidden;
+            position: relative;
+            p{
+                &::before{
+                    content: '9';
+                    background-color: $darkPink;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+                    border-radius: 40%;
+                    position: absolute;
+                    left: -15px;
+                    top: -15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.groups{
+    margin-top: 30px;
+    &-first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+            text-align: right;
+        }
+    }
+    &-second{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+}

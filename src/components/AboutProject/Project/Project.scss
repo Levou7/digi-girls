@@ -1,0 +1,38 @@
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 129.5%;
+        color: #000000;
+    }
+    &-first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        p{
+            width: 750px;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 36px;
+            color: black;
+            text-align: right;
+        }
+    }
+    &-second{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            width: 720px;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 36px;
+            color: black;
+        }
+    }
+}
