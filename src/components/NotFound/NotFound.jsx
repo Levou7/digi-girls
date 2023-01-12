@@ -20,8 +20,8 @@ function NotFound() {
             <div class="error__title">404</div>
             <div class="error__subtitle">Hmmm...</div>
             <div class="error__description">It looks like one of the developers fell asleep</div>
-            <Link to='/about' class="error__button error__button--active">LOGIN</Link>
-            <Link to='/about' class="error__button">CONTACT</Link>
+            <Link to='/' class="error__button error__button--active">LOGIN</Link>
+            <Link to='/' class="error__button">CONTACT</Link>
             </div>
 
             <div class="astronaut">

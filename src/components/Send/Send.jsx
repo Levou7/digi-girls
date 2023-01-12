@@ -15,7 +15,7 @@ function Send() {
               </div>
           </div>
           <h2>Успешно</h2>
-          <Link to='/about'>Home</Link>
+          <Link to='/'>Home</Link>
         </div>
     </div>
   )
