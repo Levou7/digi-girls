@@ -10,7 +10,7 @@ import gallery from '../../../assets/img/gallery.png'
 
 function Direction() {
   return (
-    <div>
+    <div className='center'>
         <div className="bgD">
             <div className="direction container">
                 <div className="direction-txt">
