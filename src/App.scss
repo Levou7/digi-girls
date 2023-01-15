@@ -666,6 +666,12 @@ h3::selection{
     }
   }
   .header-links{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    padding-right: 10px;
+    z-index: 10;
     &-left{
       display: flex;
       align-items: center;
@@ -728,7 +734,6 @@ h3::selection{
   }
   .offcanvas{
     width: 50% !important;
-    opacity: 0.9;
     &-body{
       display: flex;
       flex-direction: column;

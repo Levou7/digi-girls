@@ -19,6 +19,11 @@
         line-height: 47px;
         color: black;
     }
+    &-btn{
+        button{
+            border: none;
+        }
+    }
     &-inp{
         display: flex;
         input{

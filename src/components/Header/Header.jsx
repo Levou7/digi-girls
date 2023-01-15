@@ -15,18 +15,22 @@ function Header() {
               </div>
               <div className="header-links-media">
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
-                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i className="bi bi-list"></i></button>
+                <div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div className="offcanvas-header">
+                    <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
-                  <div class="offcanvas-body">
+                  <div className="offcanvas-body">
                     <a href="#about">О проекте</a>
                     <a href="#direct">Направления</a>
                     <a href="#task">Задачи</a>
                     <a href="#result">Результаты</a>
                     <a href="#contact">Контакты</a>
+                    <div className='changer'>
+                      <a href="#UZ">UZ</a>
+                      <a href="#RU">RU</a>
+                    </div>          
                   </div>
                 </div>
               </div>
