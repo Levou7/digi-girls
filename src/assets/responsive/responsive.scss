@@ -1,0 +1,198 @@
+
+@media (width: 365px){
+    .container{
+      width: 100%;
+      overflow: hidden;
+    }
+    .bg{
+      background-position: center !important;
+      background-size: cover !important;
+      width: 100%;
+    }
+    .groups-first{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      img{
+        width: 340px;
+      }
+      p{
+        text-align: left !important;
+        transform: rotateX(180deg);
+        font-size: 12px !important;
+        line-height: 20px !important;
+      }
+    }
+    .groups-second{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      transform: rotateX(180deg);
+      img{
+        transform: rotateX(180deg);
+        width: 340px;
+      }
+      p{
+        text-align: left;
+        transform: rotateX(180deg);
+        font-size: 12px !important;
+        line-height: 20px !important;
+      }
+    }
+    .regist{
+      overflow-y: scroll;
+      height: 850px !important;
+      h2{
+        font-size: 30px !important;
+      }
+      &-inp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        input{
+          width: 260px !important;
+        }
+        &-right{
+          margin-left: 0 !important;
+        }
+      }
+    }
+    .bgD{
+      width: 340px !important;
+    }
+    .bgD{
+      height: 1460px !important;
+    }
+    .direction{
+      width: 340px !important;
+      &-txt{
+        b{
+          font-size: 30px !important;
+        }
+        p{
+          font-size: 12px !important;
+          text-align: center;
+        }
+      }
+      &-cards{
+        margin-top: 0 !important;
+        div{
+          height: 190px !important;
+          margin-top: 10px;
+          p{
+            font-size: 12px !important;
+          }
+          img{
+            width: 100px;
+          }
+        }
+      }
+      button{
+        font-size: 14px !important;
+      }
+    }
+    .project{
+      &-first{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img{
+          width: 340px !important;
+  
+        }
+        p{
+          font-size: 20px !important;
+          width: 340px !important;
+        }
+      }
+      &-second{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: rotateX(180deg);
+        img{
+          transform: rotateX(180deg);
+          width: 340px;
+        }
+        p{
+          font-size: 20px !important;
+          transform: rotateX(180deg);
+          width: 340px !important;
+        }
+      }
+    }
+    .header-bottom{
+      display: none !important;
+    }
+    .header-bottom-media{
+      margin-top: 100px;
+      display: block !important;
+      .right{
+        display: block !important;
+      }
+      .left{
+        min-width: 320px;
+      }
+    }
+    .header-links{
+      &-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      &-right{
+        display: none;
+      }
+    }
+    .footer{
+      &-links{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 340px !important;
+        &-center{
+          margin-left: -40px;
+        }
+        &-right{
+          flex-wrap: wrap;
+          .firstChild{
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+    .bgT{
+      height: 1140px !important;
+      .tasks{
+        &-cards{
+          margin-top: -10px;
+          div{
+            width: 182px;
+            height: 85px;
+            margin-top: -5px;
+          }
+          p{
+            width: 182px;
+            font-size: 12px !important;
+            text-align: center;
+            margin-right: 5px;
+            &::before{
+              width: 35px !important;
+              height: 35px !important;
+              position: absolute !important;
+              left: 40% !important;
+              top: 70px !important;
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
