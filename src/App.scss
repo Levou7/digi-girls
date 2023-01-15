@@ -484,7 +484,7 @@ h3::selection{
 
 // 365
 
-@media (width: 365px){
+@media (max-width: 365px){
   .container{
     width: 100%;
     overflow: hidden;
@@ -500,7 +500,7 @@ h3::selection{
     justify-content: center;
     flex-wrap: wrap;
     img{
-      width: 340px;
+      width: 335px;
     }
     p{
       text-align: left !important;
@@ -517,7 +517,7 @@ h3::selection{
     transform: rotateX(180deg);
     img{
       transform: rotateX(180deg);
-      width: 340px;
+      width: 335px;
     }
     p{
       text-align: left;
@@ -575,7 +575,7 @@ h3::selection{
     height: 780px !important;
   }
   .direction{
-    width: 340px !important;
+    width: 335px !important;
     &-txt{
       b{
         font-size: 30px !important;
@@ -626,7 +626,7 @@ h3::selection{
       justify-content: center;
       flex-direction: column;
       img{
-        width: 340px !important;
+        width: 335px !important;
 
       }
     }
@@ -638,7 +638,7 @@ h3::selection{
       transform: rotateX(180deg);
       img{
         transform: rotateX(180deg);
-        width: 340px;
+        width: 335px;
       }
     }
   }
@@ -682,7 +682,7 @@ h3::selection{
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      width: 340px !important;
+      width: 335px !important;
       &-center{
         margin-left: -40px;
       }
