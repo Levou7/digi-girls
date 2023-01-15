@@ -1,3 +1,5 @@
+@import './assets/sass/variables.scss';
+
 html{
   scroll-behavior: smooth;
 }
@@ -480,6 +482,7 @@ h3::selection{
   }
 }
 
+// 365
 
 @media (width: 365px){
   .container{
@@ -551,11 +554,25 @@ h3::selection{
       }
     }
   }
-  .bgD{
-    width: 340px !important;
+  .bgR{
+    height: 800px !important;
+  }
+  .result{
+    &-cards{
+      display: flex !important;
+      div{
+        display: flex !important;
+        flex-direction: row !important;
+        margin-top: 20px !important;
+        p{
+          text-align: left;
+          margin-left: 10px;
+        }
+      }
+    }
   }
   .bgD{
-    height: 1460px !important;
+    height: 780px !important;
   }
   .direction{
     width: 340px !important;
@@ -570,8 +587,16 @@ h3::selection{
     }
     &-cards{
       margin-top: 0 !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      flex-direction: row;
+      width: 270px;
+      .second{
+        margin-left: 1px;
+      }
       div{
-        height: 190px !important;
+        width: 120px !important;
+        height: 170px !important;
         margin-top: 10px;
         p{
           font-size: 12px !important;
@@ -586,6 +611,15 @@ h3::selection{
     }
   }
   .project{
+    h2{
+      font-size: 30px !important;
+    }
+    p{
+      font-size: 12px !important;
+      text-align: left !important;
+      line-height: 24px !important;
+      margin-left: -20px !important;
+    }
     &-first{
       display: flex;
       align-items: center;
@@ -594,10 +628,6 @@ h3::selection{
       img{
         width: 340px !important;
 
-      }
-      p{
-        font-size: 20px !important;
-        width: 340px !important;
       }
     }
     &-second{
@@ -609,11 +639,6 @@ h3::selection{
       img{
         transform: rotateX(180deg);
         width: 340px;
-      }
-      p{
-        font-size: 20px !important;
-        transform: rotateX(180deg);
-        width: 340px !important;
       }
     }
   }
@@ -628,6 +653,17 @@ h3::selection{
     }
     .left{
       min-width: 320px;
+      b{
+        font-size: 28px !important;
+      }
+      p{
+        font-size: 12px !important;
+        margin-top: 20px;
+      }
+      button{
+        margin-top: 20px;
+        font-size: 14px !important;
+      }
     }
   }
   .header-links{
@@ -659,14 +695,20 @@ h3::selection{
     }
   }
   .bgT{
-    height: 1140px !important;
+    height: 755px !important;
     .tasks{
+      h2{
+        font-size: 30px !important;
+      }
       &-cards{
-        margin-top: -10px;
+        margin-top: 10px;
+        width: 345px;
+        display: flex;
+        flex-wrap: wrap;
         div{
-          width: 182px;
-          height: 85px;
-          margin-top: -5px;
+          width: 122px;
+          height: 95px;
+          margin-top: 5px;
         }
         p{
           width: 182px;
@@ -677,11 +719,23 @@ h3::selection{
             width: 35px !important;
             height: 35px !important;
             position: absolute !important;
-            left: 40% !important;
-            top: 70px !important;
+            left: 37% !important;
+            top: 80px !important;
             padding: 0 !important;
           }
         }
+      }
+    }
+  }
+  .offcanvas{
+    width: 50% !important;
+    opacity: 0.9;
+    &-body{
+      display: flex;
+      flex-direction: column;
+      a{
+        color: $pink !important;
+        margin-top: 10px;
       }
     }
   }

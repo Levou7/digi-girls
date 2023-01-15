@@ -14,20 +14,21 @@ function Header() {
                 <a href="#head">Girls in Digital</a>
               </div>
               <div className="header-links-media">
-              <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <section className="top-nav">
-                  <input id="menu-toggle" type="checkbox" />
-                  <label className='menu-button-container' htmlFor="menu-toggle">
-                  <div className='menu-button'></div>
-                </label>
-                  <ul className="menu">
-                    <li><a href="#about">О проекте</a></li>
-                    <li><a href="#direct">Направления</a></li>
-                    <li><a href="#task">Задачи</a></li>
-                    <li><a href="#result">Результаты</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                  </ul>
-                </section>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <a href="#about">О проекте</a>
+                    <a href="#direct">Направления</a>
+                    <a href="#task">Задачи</a>
+                    <a href="#result">Результаты</a>
+                    <a href="#contact">Контакты</a>
+                  </div>
+                </div>
               </div>
               <div className='header-links-right'>
                 <a href="#about">О проекте</a>
