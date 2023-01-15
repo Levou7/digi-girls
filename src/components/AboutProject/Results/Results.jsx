@@ -9,7 +9,7 @@ import rulet from '../../../assets/img/rulet.png'
 
 function Results() {
   return (
-    <div>
+    <div id='result'>
       <div className="bgR">
         <div className="result container">
           <div className="result-txt">

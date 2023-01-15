@@ -32,10 +32,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            p{
+            a{
                 color: white;
                 margin: 0px 25px;
                 cursor: pointer;
+                text-decoration: none;
+                &::selection{
+                    color: aqua;
+                }
             }
         }
         &-right{

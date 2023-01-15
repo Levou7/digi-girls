@@ -9,7 +9,7 @@ import facebook from '../../assets/img/facebook.png'
 
 function Footer() {
   return (
-    <div className='bgP'>
+    <div className='bgP' id='contact'>
       <div className="footer container">
         <div className="footer-links">
           <div className='footer-links-left'>
@@ -17,10 +17,10 @@ function Footer() {
             <b>Girls in digital</b>
           </div>
           <div className="footer-links-center">
-            <p onClick={()=> {window.scrollTo(1,900)}}>О Проекте</p>
-            <p onClick={()=> {window.scrollTo(1,1800)}}>Направления</p>
-            <p onClick={()=> {window.scrollTo(1,4900)}}>Результаты</p>
-            <p onClick={()=> {window.scrollTo(1,6000)}}>Контакты</p>
+            <a href='#about'>О Проекте</a>
+            <a href='#direct'>Направления</a>
+            <a href='#result'>Результаты</a>
+            <a href='#contact'>Контакты</a>
           </div>
           <div className="footer-links-right">
             <div className='firstChild'>

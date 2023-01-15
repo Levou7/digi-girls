@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
 import './Header.scss'
 
 import logo from '../../assets/img/logo.svg'
 
 function Header() {
-
-  const [open, setOpen] = useState('')
 
   return (
     <div>
@@ -24,20 +21,20 @@ function Header() {
                   <div className='menu-button'></div>
                 </label>
                   <ul className="menu">
-                    <li><a href="#about" onClick={()=> {window.scrollTo(1,900)}}>О проекте</a></li>
-                    <li><a href="#direct" onClick={()=> {window.scrollTo(1,1800)}}>Направления</a></li>
-                    <li><a href="#task" onClick={()=> {window.scrollTo(1,3500)}}>Задачи</a></li>
-                    <li><a href="#result" onClick={()=> {window.scrollTo(1,4900)}}>Результаты</a></li>
-                    <li><a href="#contact" onClick={()=> {window.scrollTo(1,6000)}}>Контакты</a></li>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#direct">Направления</a></li>
+                    <li><a href="#task">Задачи</a></li>
+                    <li><a href="#result">Результаты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                   </ul>
                 </section>
               </div>
               <div className='header-links-right'>
-                <a href="#about" onClick={()=> {window.scrollTo(1,900)}}>О проекте</a>
-                <a href="#direct" onClick={()=> {window.scrollTo(1,1800)}}>Направления</a>
-                <a href="#task" onClick={()=> {window.scrollTo(1,3500)}}>Задачи</a>
-                <a href="#result" onClick={()=> {window.scrollTo(1,4900)}}>Результаты</a>
-                <a href="#contact" onClick={()=> {window.scrollTo(1,6000)}}>Контакты</a>
+                <a href="#about">О проекте</a>
+                <a href="#direct">Направления</a>
+                <a href="#task">Задачи</a>
+                <a href="#result">Результаты</a>
+                <a href="#contact">Контакты</a>
                 <select name="s" id="select">
                   <option value="РУ">РУ</option>
                   <option value="UZ">UZ</option>
