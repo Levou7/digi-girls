@@ -13,7 +13,7 @@ function Header() {
                 <a href="#head"><img src={logo} alt="logo" /></a>
                 <a href="#head">Girls in Digital</a>
               </div>
-              <div className="header-links-media">
+              <div className="header-links-media" style={{display: 'none'}}>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i className="bi bi-list"></i></button>
                 <div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
