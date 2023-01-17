@@ -3,8 +3,11 @@ import './Project.scss'
 
 import projectF from '../../../assets/img/projectF.png'
 import projectS from '../../../assets/img/projectS.png'
+import Aos from 'aos'
 
 function Project() {
+    Aos.init()
+
   return (
     <div>
         <section id='about'>
