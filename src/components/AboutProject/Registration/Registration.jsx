@@ -1,21 +1,20 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Registration.scss'
 
 function Registration() {
-    const [val, setVal] = useState()
-    const inpval = (e) => {
-        e.preventDefault()
-        const target = e.target
-        setVal(target.ism.value)
-    }
+    const productAdd = (e)=>{
+    e.preventDefault()
+    let val = e.target.ism.value
+    console.log('added values' + val);
+    e.target.ism.value = ''
+  }
   return (
     <div className='bgW'>
         <div className="regist container">
             <div className="regist-txt">
                 <h2>Регистрация</h2>
             </div>
-            <form action="#" className="frm" onSubmit={inpval}>
+            <form action="#" className="frm" onSubmit={productAdd}>
                 <div className="regist-inp">
                     <div className="regist-inp-left">
                         <p>Имя</p>

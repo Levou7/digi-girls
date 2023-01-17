@@ -40,7 +40,7 @@ function Header() {
                 <a href="#task">Задачи</a>
                 <a href="#result">Результаты</a>
                 <a href="#contact">Контакты</a>
-                <select name="s" id="select">
+                <select style={{outline: 'none'}} name="s" id="select">
                   <option value="РУ">РУ</option>
                   <option value="UZ">UZ</option>
                 </select>

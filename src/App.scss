@@ -185,6 +185,18 @@ h3::selection{
     &-right{
       display: none;
     }
+    &-media{
+      display: block !important;
+      .offcanvas-body{
+        display: flex !important;
+        flex-direction: column;
+        a{
+          color: $pink;
+          margin-top: 20px;
+          font-family: sans-serif;
+        }
+      }
+    }
   }
   .bgR{
     height: 1100px !important;
@@ -486,7 +498,7 @@ h3::selection{
 
 @media (max-width: 605px){
   .container{
-    width: 100%;
+    width: 100% !important;
     overflow: hidden;
   }
   .bg{
@@ -499,7 +511,7 @@ h3::selection{
     align-items: center !important;
     justify-content: center !important;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
     img{
       width: 335px;
     }
@@ -507,7 +519,7 @@ h3::selection{
       text-align: left !important;
       font-size: 12px !important;
       line-height: 20px !important;
-      margin-left: 40px;
+      max-width: 370px;
     }
   }
   .groups-second{
@@ -515,7 +527,7 @@ h3::selection{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
     transform: rotateX(180deg);
     img{
       transform: rotateX(180deg);
@@ -526,7 +538,7 @@ h3::selection{
       transform: rotateX(180deg);
       font-size: 12px !important;
       line-height: 20px !important;
-      margin-left: 40px;
+      max-width: 370px;
     }
   }
   .regist{
@@ -581,10 +593,9 @@ h3::selection{
   }
   .bgD{
     height: 780px !important;
-    max-width: 605px;
   }
   .direction{
-    width: 335px !important;
+    max-width: 335px !important;
     &-txt{
       b{
         font-size: 30px !important;
@@ -736,9 +747,8 @@ h3::selection{
       &-cards{
         margin-top: 10px;
         display: flex !important;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap !important;
+        justify-content: space-around;
+        min-width: 350px;
         div{
           width: 122px;
           height: 95px;
@@ -770,16 +780,6 @@ h3::selection{
         color: $pink !important;
         margin-top: 10px;
       }
-    }
-  }
-}
-
-@media screen and (max-width:400px) {
-  .tasks{
-    &-cards{
-      width: 350px !important;
-      position: relative;
-      right: 30px;
     }
   }
 }

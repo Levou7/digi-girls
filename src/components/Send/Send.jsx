@@ -5,6 +5,14 @@ import './Send.scss'
 function Send() {
   return (
     <div className='send'>
+        {
+          !arguments.length ?
+          <div className="succes">
+            
+            <h2>Успешно</h2>
+            <Link to='/'>Home</Link>
+          </div>
+        :
         <div className="succes">
           <div className="success-checkmark">
               <div className="check-icon">
@@ -14,9 +22,10 @@ function Send() {
                   <div className="icon-fix"></div>
               </div>
           </div>
-          <h2>Успешно</h2>
+          <h2>Неуспешно</h2>
           <Link to='/'>Home</Link>
         </div>
+        }
     </div>
   )
 }
