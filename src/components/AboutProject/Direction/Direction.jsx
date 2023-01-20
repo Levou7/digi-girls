@@ -19,27 +19,27 @@ function Direction() {
                         <p>Проект будет проводится по направлениям</p>
                     </div>
                     <div className="direction-cards">
-                        <div className="first">
+                        <div data-aos="flip-left" className="first">
                             <p>SMM и Таргетинг, копирайтинг</p>
                             <img src={rul} alt="rul" />
                         </div>
-                        <div className="second">
+                        <div data-aos="flip-left" className="second">
                             <p>3D <br /> дизайн.</p>
                             <img src={house} alt="house" />
                         </div>
-                        <div className="third">
+                        <div data-aos="flip-left" className="third">
                             <p>Графический <br /> дизайн</p>
                             <img src={statue} alt="statue" />
                         </div>
-                        <div className="fourth">
+                        <div data-aos="flip-left" className="fourth">
                             <p className='br'>Логистика</p>
                             <img src={van} alt="van" />
                         </div>
-                        <div className="fivth">
+                        <div data-aos="flip-left" className="fivth">
                             <p>Программиро- <br />вание</p>
                             <img src={code} alt="code" />
                         </div>
-                        <div className="sixth">
+                        <div data-aos="flip-left" className="sixth">
                             <p>Айти <br /> менеджмент</p>
                             <img src={gallery} alt="gallery" />
                         </div>

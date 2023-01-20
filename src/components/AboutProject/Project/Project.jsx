@@ -13,7 +13,7 @@ function Project() {
         <section id='about'>
             <div className="project container">
                 <h2>О проекте</h2>
-                <div className="project-first">
+                <div data-aos='flip-up' className="project-first">
                     <div>
                         <img src={projectF} alt="pf" />
                     </div>

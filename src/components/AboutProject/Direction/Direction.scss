@@ -47,6 +47,9 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            &:hover{
+                transform: scale(1.1);
+            }
             p{
                 font-weight: 300;
                 font-size: 18px;
