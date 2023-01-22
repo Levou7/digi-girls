@@ -5,7 +5,6 @@ import { useContext, useState } from 'react'
 import { Context } from '../../Context/Context'
 import { head, links } from '../../data/Links'
 
-import hb from '../../assets/img/hBottom2.png';
 
 function Header() {
   const {lang, setLang} = useContext(Context)
