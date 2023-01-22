@@ -37,8 +37,12 @@
                 margin: 0px 25px;
                 cursor: pointer;
                 text-decoration: none;
+                transition: 0.5s ease all;
                 &::selection{
                     color: aqua;
+                }
+                &:hover{
+                    transform: scale(1.1);
                 }
             }
         }
@@ -58,11 +62,21 @@
                 line-height: 197.19%;
                 margin: 0px 10px;
                 cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
             img{
                 margin: 0px 10px;
+                transition: 0.5s ease all;
                 cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
+    }
+    .active{
+        color: $pink;
     }
 }

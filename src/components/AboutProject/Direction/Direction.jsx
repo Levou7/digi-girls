@@ -1,52 +1,36 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Direction.scss'
 
-import rul from '../../../assets/img/rul.png'
-import house from '../../../assets/img/house.png'
-import statue from '../../../assets/img/statue.png'
-import van from '../../../assets/img/van.png'
-import code from '../../../assets/img/code.png'
-import gallery from '../../../assets/img/gallery.png'
+import { direction } from '../../../data/Links'
+import { Context } from '../../../Context/Context'
 
 function Direction() {
+    const {lang} = useContext(Context)
+
   return (
     <div className='center'>
         <section id='direct'>
             <div className="bgD">
                 <div className="direction container">
                     <div className="direction-txt">
-                        <b>Направлении</b>
-                        <p>Проект будет проводится по направлениям</p>
+                        <b>{lang === 'Uz' ? 'Yo`nalishi' : 'Направлении'}</b>
+                        <p>{lang === 'Uz' ? 'Loyiha yo`nalishlar bo`yicha amalga oshiriladi' : 'Проект будет проводится по направлениям'}</p>
                     </div>
                     <div className="direction-cards">
-                        <div data-aos="flip-left" className="first">
-                            <p>SMM и Таргетинг, копирайтинг</p>
-                            <img src={rul} alt="rul" />
-                        </div>
-                        <div data-aos="flip-left" className="second">
-                            <p>3D <br /> дизайн.</p>
-                            <img src={house} alt="house" />
-                        </div>
-                        <div data-aos="flip-left" className="third">
-                            <p>Графический <br /> дизайн</p>
-                            <img src={statue} alt="statue" />
-                        </div>
-                        <div data-aos="flip-left" className="fourth">
-                            <p className='br'>Логистика</p>
-                            <img src={van} alt="van" />
-                        </div>
-                        <div data-aos="flip-left" className="fivth">
-                            <p>Программиро- <br />вание</p>
-                            <img src={code} alt="code" />
-                        </div>
-                        <div data-aos="flip-left" className="sixth">
-                            <p>Айти <br /> менеджмент</p>
-                            <img src={gallery} alt="gallery" />
-                        </div>
+                        {
+                            direction?.map((e,i)=>(
+                                <div key={i} className={e.class}>
+                                    <p>{e[`txt${lang ? lang : 'Ru'}`]}</p>
+                                    <img src={e.img} alt={e.class} />
+                                </div>
+                            ))
+                        }
                     </div>
                     <div className="direction-btn">
                         <button>
-                            Записаться
+                            {
+                                lang === 'Uz' ? 'Yozilish' : 'Записаться'
+                            }
                         </button>
                     </div>
                 </div>

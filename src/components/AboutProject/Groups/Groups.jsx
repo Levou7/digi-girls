@@ -1,29 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Groups.scss'
 
-import groupF from '../../../assets/img/groupF.png'
-import groupS from '../../../assets/img/groupS.png'
+import { groups } from '../../../data/Links'
+import { Context } from '../../../Context/Context'
 
 function Groups() {
+  const {lang} = useContext(Context)
+
   return (
     <div>
         <div className="groups container">
-          <div className="groups-first">
-            <div>
-              <img src={groupF} alt="gF" />
-            </div>
-            <div>
-              <p>Проект осуществляется в 4 этапа. Отбор участников проводится на основе специального анкетирования,собесодование а также анкетирование возможно на сайте проекта в режиме он-лайн. также собеседования с участием тренеров и специалистов. Привлечение участников будет производиться посредством рекламной кампании в ТВ, интернет и печатной СМИ.</p>
-            </div>
-          </div>
-          <div className="groups-second">
-            <div>
-              <p>Рабочая группа будет состоят из высококвалифицированных тренеров-специалистов. Для полного информирования участников проекта требуется освещение через СМИ, разработка сайта и создание PR-группы. Рабочей группой будут разработаны модули, программы направлений  в проекте.</p>
-            </div>
-            <div>
-              <img src={groupS} alt="gS" />
-            </div>
-          </div>
+          {
+            groups?.map((e,i)=>(
+              <div key={i} data-aos='fade-up' data-aos-duration="5000" className={e.class}>
+                <div>
+                  <img src={e.img} alt={e.class} />
+                </div>
+                <div>
+                  <p>{e[`txt${lang ? lang : 'Ru'}`]}</p>
+                </div>
+              </div>
+            ))
+          }
+          
         </div>
     </div>
   )

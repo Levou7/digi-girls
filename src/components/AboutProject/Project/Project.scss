@@ -16,25 +16,36 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 30px;
+        background-color: #fff;
+        padding: 20px;
         p{
             width: 750px;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 28px;
             line-height: 36px;
             color: black;
             text-align: right;
+        }
+        img{
+            transform: translateX(-90px);
         }
     }
     &-second{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px 100px;
         p{
             width: 720px;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 28px;
             line-height: 36px;
             color: black;
+        }
+        img{
+            transform: translateX(180px)
         }
     }
 }

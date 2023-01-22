@@ -1,11 +1,25 @@
 import './Header.scss'
 
 import logo from '../../assets/img/logo.svg'
+import { useContext, useState } from 'react'
+import { Context } from '../../Context/Context'
+import { head, links } from '../../data/Links'
+
+import hb from '../../assets/img/hBottom2.png';
 
 function Header() {
+  const {lang, setLang} = useContext(Context)
+
+  const [lan, setLan] = useState('Ru')
+  const selectLang = (e)=>{
+    e.preventDefault()
+    setLang(e.target.value)
+    setLan(e.target.value)
+    console.log(lang);
+  }
 
   return (
-    <div>
+    <section id='head'>
         <div className="bg">
           <div className="header container">
             <div className="header-links">
@@ -22,55 +36,54 @@ function Header() {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div className="offcanvas-body">
-                    <a href="#about">О проекте</a>
-                    <a href="#direct">Направления</a>
-                    <a href="#task">Задачи</a>
-                    <a href="#result">Результаты</a>
-                    <a href="#contact">Контакты</a>
+                    <a href='#about'>{lang === 'Uz' ? 'Loyiha haqida' : 'О Проекте'}</a>
+                    <a href='#task'>{lang === 'Uz' ? 'Masalalar' : 'Задачи'}</a>
+                    <a href='#direct'>{lang === 'Uz' ? 'Yo`nalishlar' : 'Направления'}</a>
+                    <a href='#result1'>{lang === 'Uz' ? 'Natijalar' : 'Результаты'}</a>
+                    <a href='#contact'>{lang === 'Uz' ? 'Kontaktlar' : 'Контакты'}</a>
                     <div className='changer'>
-                      <a href="#UZ">UZ</a>
-                      <a href="#RU">RU</a>
+                      <a href="#UZ" onClick={()=> setLang('Uz')} className={lang === 'Uz' ? 'active' : 'n'}>UZ</a>
+                      <a href="#RU" onClick={()=> setLang('Ru')} className={lang === 'Ru' ? 'active' : 'n'}>RU</a>
                     </div>          
-                  </div>
+                  </div> 
                 </div>
               </div>
               <div className='header-links-right'>
-                <a href="#about">О проекте</a>
-                <a href="#direct">Направления</a>
-                <a href="#task">Задачи</a>
-                <a href="#result">Результаты</a>
-                <a href="#contact">Контакты</a>
-                <select style={{outline: 'none'}} name="s" id="select">
-                  <option value="РУ">РУ</option>
-                  <option value="UZ">UZ</option>
+                  {
+                    links?.map((e,i)=>(
+                      <li key={i}>
+                          <a href={e.href}>{e[`link${lan}`]}</a>
+                      </li>
+                    ))
+                  }
+                <select onChange={selectLang} style={{outline: 'none'}} name="s" id="select">
+                  <option value="Ru">Ru</option>
+                  <option value="Uz">Uz</option>
                 </select>
                 <button onClick={()=> {window.scrollTo(1,4200)}}>
-                  Регистрация
+                  {lang === 'Uz' ? 'Belgilanish' : 'Регистрация'}
                 </button>
               </div>
             </div>
             <div className="header-bottom">
-              <div>
+              <div className='header-bottom1'>
                 <b>"Girls in digital"</b>
-                <p>Организация курсов повышения квалификации для девушек специалистов в сфере ИТ   и подготовка высококвалифицированных кадров</p>
-                <button>
-                  Подробнее
-                </button>
+                {
+                  head?.map((e,i)=>(
+                    <>
+                      <p key={i}>{e[`txt${lang ? lang : 'Ru'}`]}</p>
+                      <button key={i}>{e[`btn${lang ? lang : 'Ru'}`]}</button>
+                    </>
+                  ))
+                }
               </div>
-            </div>
-            <div style={{display: 'none'}} className="header-bottom-media">
-              <div className="left">
-                <b>“Girls in digital”</b>
-                <p>Организация курсов повышения квалификации для девушек специалистов в сфере ИТ   и подготовка высококвалифицированных кадров</p>
-                <button>Подробнее</button>
-              </div>
-              <div className="right">
-
+              <div className='header-bottom2'>
+                <p></p>
               </div>
             </div>
           </div>
         </div>
-    </div>
+    </section>
   )
 }
 

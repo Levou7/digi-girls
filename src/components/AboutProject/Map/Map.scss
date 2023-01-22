@@ -18,27 +18,24 @@
             flex-direction: column;
             .right{
                 margin-left: 20px;
+                display: flex;
+                flex-direction: column;
                 b{
                 font-weight: 500;
                 font-size: 26.272px;
                 line-height: 29px;
                 color: white;
             }
-            .w270{
-                width: 270px;
-            }
-            p{
-                font-weight: 200;
-                font-size: 22.5188px;
-                line-height: 25px;
-                color: white;
-                margin-top: 10px;
-            }
             }
             .div-map{
                 display: flex;
                 margin-left: 50px;
                 margin-top: 35px;
+                img{
+                    width: 70px;
+                    border-radius: 50%;
+                    opacity: 0.9;
+                }
             }
         }
         &-right{
@@ -49,5 +46,14 @@
                 height: 100%;
             }
         }
+    }
+    .href{
+        font-weight: 200;
+        font-size: 22.5188px;
+        line-height: 25px;
+        color: white;
+        margin-top: 10px;
+        width: 270px;
+        text-decoration: none;
     }
 }

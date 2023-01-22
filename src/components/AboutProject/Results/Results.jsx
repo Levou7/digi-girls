@@ -1,42 +1,29 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Results.scss'
 
-import codeR from '../../../assets/img/codeR.png'
-import pasport from '../../../assets/img/pasport.png'
-import money from '../../../assets/img/money.png'
-import rocket from '../../../assets/img/rocket.png'
-import rulet from '../../../assets/img/rulet.png'
+import { Context } from '../../../Context/Context'
+import { result } from '../../../data/Links'
 
 function Results() {
+  const {lang} = useContext(Context)
+
   return (
-    <div id='result'>
+    <div id='result1'>
       <div className="bgR">
-        <div className="result container">
-          <div className="result-txt">
-            <h2>Результаты</h2>
-            <p>Ожидаемый результат: Подготовка квалифицированных и конкурентоспособных  кадров и разработка стартапп проектов и  среди девушек</p>
+        <div className="result1 container">
+          <div className="result1-txt">
+            <h2>{lang === 'Uz' ? 'Natijalar' : 'Результаты'}</h2>
+            <p>{lang === 'Uz' ? 'Kutilayotgan natija: Malakali va raqobatbardosh kadrlar tayyorlash va qizlar o‘rtasida startap loyihalarini ishlab chiqish' : 'Ожидаемый результат: Подготовка квалифицированных и конкурентоспособных  кадров и разработка стартапп проектов и  среди девушек'}</p>
           </div>
-          <div className="result-cards">
-            <div>
-              <img src={codeR} alt="codeR" />
-              <p>Самореализация девушек в сфере IT</p>
-            </div>
-            <div>
-              <img src={pasport} alt="pasport" />
-              <p>Выбор профессии без квалификациии дипломов</p>
-            </div>
-            <div>
-              <img src={money} alt="money" />
-              <p>Возможность зарабатывать дистанционно (фриланс)</p>
-            </div>
-            <div>
-              <img src={rocket} alt="rocket" />
-              <p>Возможность начать свои социальные проекты в виде Старт апов</p>
-            </div>
-            <div>
-              <img src={rulet} alt="rulet" />
-              <p>Маркетинговые навыки</p>
-            </div>
+          <div className="result1-cards">
+            {
+              result?.map((e,i)=>(
+                <div>
+                  <img src={e.img} alt={e.id} />
+                  <p>{e[`txt${lang ? lang : 'Ru'}`]}</p>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>

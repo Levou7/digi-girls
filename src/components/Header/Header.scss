@@ -7,11 +7,48 @@
     height: 615px;
 }
 
+li{
+    list-style-type: none;
+}
+
 .header{
+    .offcanvas{
+        background-color: $pink;
+        &-body{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            a{
+                color: white !important;
+                margin-top: 20px;
+                &:active{
+                    transform: scale(0.9);
+                }
+            }
+            .changer{
+                a:active{
+                    transform: scale(0.9);
+                }
+                .active{
+                    color: black !important;
+                }
+            }
+        }
+    }
     &-links{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &-right{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15px;
+            }
+        }
         a{
             text-decoration: none;
             margin-right: 30px;
@@ -20,6 +57,10 @@
             font-weight: 300;
             font-size: 16px;
             line-height: 18px;
+            transition: 0.5s ease all;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
         select{
             background: transparent;
@@ -53,18 +94,29 @@
       }
     }
     &-bottom{
-        background: url('../../assets/img/hBottom.png');
-        height: 730px;
-        border-radius: 8px;
-        background-position: center;
-        background-size: cover;
         margin-top: 39px;
         display: flex;
-        align-items: baseline;
-        justify-content: center;
-        flex-direction: column;
+        flex-wrap: nowrap;
+        &1{
+            background: url('../../assets/img/hBottom1.png');
+            background-position: center;
+            background-size: cover;
+            padding: 50px;
+            border-radius: 10px;
+            height: 700px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &2{
+            background: url('../../assets/img/hBottom2.png');
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            padding: 50px;
+        }
         div{
-            margin-left: 40px;
             b{
                 font-weight: 600;
                 font-size: 78px;
@@ -91,47 +143,4 @@
             }
         }
     }
-    &-bottom-media{
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        .left{
-            background-image: url('../../assets/img/mediaLeft.png');
-            background-size: cover;
-            background-position: center;
-            max-width: 720px !important;
-            display: none;
-            align-items: baseline;
-            justify-content: center;
-            flex-direction: column;
-            height: 300px;
-            b{
-                font-size: 38px;
-                color: white;
-            }
-            p{
-                font-size: 16px;
-                color: white;
-                max-width: 300px;
-            }
-            button{
-                border: 1px solid white;
-                border-radius: 2px;
-                padding: 10px 26px;
-                background: transparent;
-                color: white;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 18px;
-            }
-        }
-        .right{
-            background-image: url('../../assets/img/mediaRight.png');
-            width: 300px;
-            background-size: cover;
-            background-position: center;
-        }
-    }
 }
-

@@ -1,39 +1,43 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { Context } from '../../../Context/Context'
+import { registinp1, registinp2 } from '../../../data/Links'
 import './Registration.scss'
 
 function Registration() {
-    const productAdd = (e)=>{
-    e.preventDefault()
-    let val = e.target.ism.value
-    console.log('added values' + val);
-    e.target.ism.value = ''
-  }
+  const {lang} = useContext(Context)
   return (
     <div className='bgW'>
         <div className="regist container">
             <div className="regist-txt">
-                <h2>Регистрация</h2>
+                <h2>{lang === 'Uz' ? 'Ro`yxatdan o`tish' : 'Регистрация'}</h2>
             </div>
-            <form action="#" className="frm" onSubmit={productAdd}>
+            <form action="#" className="frm">
                 <div className="regist-inp">
                     <div className="regist-inp-left">
-                        <p>Имя</p>
-                        <input name='ism' type="text"/>
-                        <p>Дата рождения</p>
-                        <input name='data' type="number" placeholder='дд.мм.гггг'/>
+                        {
+                            registinp1?.map((e,i)=>(
+                                <div key={i}>
+                                    <p>{e[`namee${lang ? lang : 'Ru'}`]}</p>
+                                    <input type={e.type}/>
+                                </div>
+                            ))
+                        }
                     </div>
                     <div className="regist-inp-right">
-                        <p>Фамилия</p>
-                        <input name='fam' type="text"/>
-                        <p>Почта</p>
-                        <input name='pochta' type="email"/>
-                        <p>Телефон</p>
-                        <input name='tel' type="tel"/>
+                        {
+                            registinp2?.map((e,i)=>(
+                                <div key={i}>
+                                    <p>{e[`namee${lang ? lang : 'Ru'}`]}</p>
+                                    <input type={e.type}/> 
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
                 <div className="regist-btn">
                     <button type='submit'>
-                        <Link to='/send'>Отправить</Link>
+                        <Link to='/send'>{lang === 'Uz' ? 'Jo`natish' : 'Отправить'}</Link>
                     </button>
                 </div>
             </form>
